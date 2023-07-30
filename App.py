@@ -20,7 +20,7 @@ website = "https://www.flipkart.com/sony-alpha-ilce-7m3-full-frame-mirrorless-ca
 path = "C:\Windows"
 
 options = Options()
-# options.headless = True
+options.headless = True
 service = Service(executable_path=path)
 driver = webdriver.Chrome(service=service, options=options)
 driver.get(website)
